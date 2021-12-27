@@ -1,0 +1,20 @@
+color backgroud #E4D7C7
+color text #B76E22
+color button FFD39A54
+
+abaikan-color navigation #C0BFBC
+
+-Dania
+Home page
+update profile
+
+-Aqilah
+setting page
+
+-Diyana
+food page
+
+-Amsyar & Faqihah
+mealtime page
+report page
+

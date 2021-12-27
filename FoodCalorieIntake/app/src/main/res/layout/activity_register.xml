@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#E4D7C7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        tools:context=".Register"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/amethysta"
+            android:text="Welcome to Trackcal"
+            android:textAlignment="center"
+            android:textColor="#B76E22"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="Create your account"
+            android:textAlignment="center"
+            android:textColor="#B76E22"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/editusername"
+            android:layout_width="318dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:hint="Enter username.."
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#B76E22"
+            android:textColorHint="#B76E22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/editpass"
+            android:layout_width="327dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Enter password.."
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#B76E22"
+            android:textColorHint="#B76E22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editusername" />
+
+        <EditText
+            android:id="@+id/editconfpass"
+            android:layout_width="326dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Enter confirm password.."
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#B76E22"
+            android:textColorHint="#B76E22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editpass" />
+
+        <EditText
+            android:id="@+id/editage"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Enter age.."
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#B76E22"
+            android:textColorHint="#B76E22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editconfpass" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            android:text="Gender"
+            android:textColor="#B76E22"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editage" />
+
+        <EditText
+            android:id="@+id/editheight"
+            android:layout_width="140dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:hint="Enter height(in m)"
+            android:inputType="number|numberDecimal"
+            android:textColor="#B76E22"
+            android:textColorHint="#B76E22"
+            app:layout_constraintEnd_toStartOf="@+id/editweight"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <EditText
+            android:id="@+id/editweight"
+            android:layout_width="137dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Enter weight(in kg)"
+            android:inputType="number|numberDecimal"
+            android:textColor="#B76E22"
+            android:textColorHint="#B76E22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="232dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#D39A54"
+            android:foreground="@android:drawable/btn_dropdown"
+            android:foregroundTint="@color/material_on_background_disabled"
+            android:popupBackground="#B76E22"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="36dp"
+            android:text="Are you active?"
+            android:textAlignment="center"
+            android:textColor="#B76E22"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editheight" />
+
+        <Button
+            android:id="@+id/submitreg"
+            android:layout_width="127dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D39A54"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="204dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/editage">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Male"
+                android:textColor="#B76E22"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:onClick="checkButton"
+                android:text="Female"
+                android:textColor="#B76E22"
+                android:textSize="20sp" />
+
+
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
